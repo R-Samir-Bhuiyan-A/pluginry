@@ -1,3 +1,61 @@
+# 🧩 Pluginry
+
+> A modular, pluggable Node.js framework — your blank canvas to build apps, APIs, or tools using fully customizable, installable plugins.
+
+---
+
+## 🚀 What is Pluginry?
+
+**Pluginry** is a developer-first Node.js framework built from the ground up to be:
+
+- 🧱 **Modular:** Everything is a plugin — routes, services, middleware, CLI tools, even core features.
+- 🧩 **Pluggable:** Create or install premade plugins to extend functionality.
+- 🖼️ **Blank Canvas:** Start from zero — only add what you need.
+- ⚡ **Extensible:** Designed to scale from tiny microservices to large API backends or full app backends.
+- 🛠️ **Hackable:** Transparent internals and accessible APIs for custom extensions.
+
+---
+
+## 🌐 Vision & Philosophy
+
+Pluginry is **not a framework with opinions** — it’s a **platform to build your own custom backend**. Think of it like WordPress for backend developers, but built on Node.js and designed for APIs, tools, or full applications.
+
+---
+
+## 📦 Key Concepts
+
+### 1. **Core**
+A lightweight runtime engine that loads plugins, configures the environment, and starts your app.
+
+### 2. **Plugins**
+Self-contained units that can:
+- Add routes
+- Register services or helpers
+- Hook into middleware chains
+- Define CLI commands
+- Include lifecycle events
+
+### 3. **App Manifest**
+A simple JSON or YAML file that declares what plugins should be loaded, and their order.
+
+### 4. **Sandbox**
+Each plugin runs in an isolated but connected context with scoped access to the Pluginry API.
+
+---
+
+## 🧱 Architecture Blueprint
+
+### Core Engine Responsibilities:
+- Load config
+- Resolve & load plugins
+- Expose shared context (`app`, `config`, `logger`, etc.)
+- Manage lifecycle hooks (`onInit`, `onStart`, `onStop`)
+- Mount routes and middlewares
+- Run CLI if invoked directly
+
+---
+
+## 📁 Project Structure (Planned)
 ---
 
 ## ⚙️ Functional Goals (MVP v1)
